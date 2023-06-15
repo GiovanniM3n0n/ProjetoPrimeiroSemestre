@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem de programação</title>
+    <link rel="stylesheet" href="../css/re.css">
+    <link rel="icon" type="image/icon" href="/image/pc.png">
+</head>
+<body>
+    <ul>
+        <li><a class="hover-underline-animation" href="./index.html">Página inicial</a></li>
+        <li><a class="hover-underline-animation" href="./li.html">Linguagem de programação</a></li>
+        <li><a class="hover-underline-animation" href="./ba.html">Banco de dados</a></li>
+        <li><a class="hover-underline-animation" href="./ai.html">Automação industrial</a></li>
+        <li><a class="hover-underline-animation" href="./ci.html">Ciência de dados</a></li>
+        <li><a class="hover-underline-animation" href="./re.html">Redes de computadores</a></li>
+
+      </ul>
+      <title>Botão Voltar ao Topo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      height: 200px; /* Altura simulada para demonstração */
+    }
+
+    #voltarTopo {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #ffffff;
+      color: #229711;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50%;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #voltarTopo:hover {
+      background-color: #777;
+    }
+  </style>
+</head>
+<body>
+  <button id="voltarTopo" onclick="voltarAoTopo()">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script>
+    window.onscroll = function() {
+      mostrarBotao();
+    };
+
+    function mostrarBotao() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("voltarTopo").style.display = "block";
+      } else {
+        document.getElementById("voltarTopo").style.display = "none";
+      }
+    }
+
+    function voltarAoTopo() {
+      // Verifica a compatibilidade do navegador
+      if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0) {
+        // Usa o método 'scrollTo' para uma transição suave
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+    }
+  </script>
+      <div class="blur">
+        <h1> <span class="input"></span> </h1>
+        <div class="text1">No estudo das redes, iniciamos o módulo explorando as definições de PAN, CAN, LAN e WAN. Também nos familiarizamos com os diversos tipos de topologia, tanto física - envolvendo cabos e computadores - quanto lógica, relacionada à circulação dos dados. 
+          <br><br><br><br>Prosseguindo com o tema da topologia, examinamos as características e aplicações dos endereços MAC (Media Access Control), responsáveis pela identificação e envio de pacotes, assim como o LLC (Logical Link Control), que gerencia o fluxo de dados. Além disso, aprendemos sobre o controle de erros com a Frame Check Sequence (FCS) e a verificação de redundância cíclica (CRC). No que diz respeito aos modelos de padronização, estudamos o modelo OSI (com suas sete camadas: aplicação, apresentação, sessão, transporte, rede, enlace e física) e o TCP/IP, que classifica essas camadas em grupos específicos, como aplicação, transporte, internet e acesso à rede. 
+          
+        </div>
+         
+        
+          <div class="text1">
+            
+            <br><br>Também nos familiarizamos com diferentes protocolos nessas camadas, como HTTP, HTTPS, ICMP, FTP, FTPS, UDP/TCP, IPv4 e IPv6, além do aspecto físico relacionado ao endereço MAC. No contexto das redes, também aprendemos sobre as metodologias de comunicação PDU (Protocol Data Unit) unicast, broadcast e multicast, que explicam as formas de transmissão de dados entre canais. Realizamos vários exercícios para determinar os IPs disponíveis em uma ou mais redes, além dos endereços de rede e broadcast padrão. Além disso, abordamos o padrão IEEE, sua origem, destino, meios de transmissão e regras de comunicação. Exploramos também conceitos como zona desmilitarizada (DMZ), VPN (rede virtual privada criptografada), DNS (Domain Name System - Sistema de Nomes de Domínio), SSH (Secure Shell), DHCP (Dynamic Host Configuration Protocol - Protocolo de Configuração Dinâmica de Host) e NAT (Network Address Translation - Tradução de Endereço de Rede).
+          
+        </div>
+         
+          <div class="text1">
+            
+            <br><br> Por fim, fomos divididos em grupos para apresentar os temas abordados durante as aulas. Os tópicos incluíam: História da Internet, Governança e Estrutura, Regulamentação de Redes, RFCs da IETF (Internet Engineering Task Force - Força-Tarefa de Engenharia da Internet), Governança de IPv4 e IPv6, e os protocolos TCP, UDP, SCTP e DCTP. 
+            
+        </div>
+      
+
+         <h1> 
+          
+            <br>Projetos desenvolvidos:</h1>
+        <span id="text"> Através da plataforma Cisco Packet Tracer, realizamos alguns testes virtuais que normalmente só seriam possíveis fisicamente.
+          <br> <br> <br> <br> <br> 
+        </span>
+        
+        <span id="text">O primeiro deles foi um projeto que simula a interação de uma rede local empresarial com servidores e um roteador residencial.</span> 
+        <span id="pojeto"> 
+
+          <figure id="fig">
+            <img id="img2" src="../image/projeto_isp.png" >
+              
+            <br><br><br><br>
+          </figure>
+            
+      </span>
+
+      <span id="text">Já o segundo no segundo, desenvolvemos um projeto que simula a comunicação entre WANs.  </span> 
+      <span id="pojeto"> 
+
+        <figure id="fig">
+          <img id="img2" src="../image/zimbabue.png" >
+            
+          <br><br><br><br>
+        </figure>
+          
+    </span>
+
+    <span id="text">No terceiro e último, simulaMmos a comunicação de PDUs entre dois computadores por via de um Switch.</span> 
+    <span id="pojeto"> 
+
+      <figure id="fig">
+        <img id="img2" src="../image/lan_cisco.png" >
+          
+        
+      </figure>
+        
+  </span>
+ 
+       </div>
+
+      
+     
+      </div>
+      
+      
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script src="../js/java5.js"></script>
+</body>
+</html>

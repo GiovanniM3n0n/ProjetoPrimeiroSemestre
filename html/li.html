@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem de programação</title>
+    <link rel="stylesheet" href="../css/li.css">
+    <link rel="icon" type="image/icon" href="/image/pc.png">
+</head>
+<body>
+    <ul>
+        <li><a class="hover-underline-animation" href="./index.html">Página inicial</a></li>
+        <li><a class="hover-underline-animation" href="./li.html">Linguagem de programação</a></li>
+        <li><a class="hover-underline-animation" href="./ba.html">Banco de dados</a></li>
+        <li><a class="hover-underline-animation" href="./ai.html">Automação industrial</a></li>
+        <li><a class="hover-underline-animation" href="./ci.html">Ciência de dados</a></li>
+        <li><a class="hover-underline-animation" href="./re.html">Redes de computadores</a></li>
+
+      </ul>
+      <title>Botão Voltar ao Topo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      height: 200px; /* Altura simulada para demonstração */
+    }
+
+    #voltarTopo {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #ffffff;
+      color: #229711;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50%;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #voltarTopo:hover {
+      background-color: #777;
+    }
+  </style>
+</head>
+<body>
+  <button id="voltarTopo" onclick="voltarAoTopo()">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script>
+    window.onscroll = function() {
+      mostrarBotao();
+    };
+
+    function mostrarBotao() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("voltarTopo").style.display = "block";
+      } else {
+        document.getElementById("voltarTopo").style.display = "none";
+      }
+    }
+
+    function voltarAoTopo() {
+      // Verifica a compatibilidade do navegador
+      if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0) {
+        // Usa o método 'scrollTo' para uma transição suave
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+    }
+  </script>
+      <div class="blur">
+        <h1> <span class="input"></span> </h1>
+        <div class="text1"> No início do semestre, começamos nossos estudos com os fundamentos da programação e fomos apresentados a algumas linguagens, sendo elas:
+           <br><br><br><br>HTML, também conhecido como HyperText Markup Language, é uma linguagem empregada na criação de páginas da internet. Seu propósito é fornecer uma estrutura e definir o conteúdo das páginas por meio de uma série de marcações, chamadas tags. Essas tags são interpretadas pelos navegadores para exibir o conteúdo de forma apropriada. Aprendemos comandos básicos para formatação de títulos, criação de formulários, botões, links, listas e tabelas. Além disso, foi enfatizada a importância da semântica, seguindo as melhores práticas de programação. Utilizamos elementos semânticos como divs com as classes nav, section, footer, header, article, aside, main, figure, em, strong e bold para dar forma aos conteúdos.
+           <br><br>O CSS, ou Cascading Style Sheets, é uma linguagem de estilos que desempenha um papel importante no controle da aparência e do design de páginas da web. Trabalhando em conjunto com o HTML, ele permite a definição de características visuais como cores, tipos de fonte, disposição dos elementos e espaçamento, entre outros. Em suma, é responsável por estilizar e embelezar os elementos HTML em uma página web.  O CSS nos permitiu personalizar o visual do documento HTML, oferecendo recursos como animações de escala, transição, hover, scroll, pointer, transform, perspective e opacidade, entre outros. Também aprendemos a posicionar os elementos na página de forma personalizada, utilizando propriedades de posicionamento.  
+           <br><br>JavaScript é uma linguagem de programação amplamente utilizada para desenvolvimento web. É uma linguagem de script que permite a criação de interatividade e dinamismo em páginas da web. Ao contrário do HTML e do CSS, que são responsáveis pela estrutura e estilização das páginas, respectivamente, o JavaScript é utilizado para adicionar funcionalidades interativas. Durante o curso, desenvolvemos algoritmos para realizar uma variedade de cálculos, incluindo média, potenciação, divisão, fatorial, multiplicação, soma e resto de divisão. Também exploramos estruturas de repetição e condicionais para criar algoritmos mais complexos.
+
+           No que diz respeito ao JavaScript no desenvolvimento web, aprendemos como integrar scripts aos documentos HTML. Além disso, exploramos a manipulação do DOM (Document Object Model), que nos permite interagir com o HTML de diversas formas. Através do DOM, podemos adicionar funções para capturar eventos, como cliques, passar o mouse sobre um elemento, fechar uma guia ou enviar um formulário.
+          
+  
+        </div>
+
+        <img id="img" src="../image/free_HTML_CSS_and_JavaScript_course_Udemy-removebg-preview.png" alt="">
+        
+       <br> <h1>Projetos desenvolvidos:</h1>
+        <span id="text"> Durante o curso, tivemos a oportunidade de desenvolver projetos para aprimorar e colocar em prática nossos conhecimentos de programação:
+        </span>
+        <span id="pojeto"> <span id="oi"><BR> Nosso primeiro projeto foi a criação de um currículo utilizando apenas HTML e CSS. Essa atividade representou o primeiro contato de muitos alunos com a programação, permitindo-nos aplicar os conceitos aprendidos até então. Foi uma experiência valiosa para consolidar os fundamentos e despertar o interesse pela programação.</span>
+            <figure id="fig">
+                <a href="../trabalhos/index - curriculo/home.html" target="_blank"><img id="img2" src="../image/eu.png" alt=""></a> 
+                <a href="../trabalhos/index - curriculo/home.html"target="_blank"><figcaption>Clique aqui para ver o projeto</figcaption></a>
+              </figure>
+        </span>
+        <span id="pojeto"> <figure id="fig"><a href="../trabalhos/Aula-10.02---Salario/" target="_blank"><img id="img2" src="../image/Screenshot 2023-06-13 at 20-01-03 Salario.png" alt=""></a> 
+          <a href="../trabalhos/Aula-10.02---Salario/index.html"target="_blank"><figcaption>Clique aqui para ver o projeto</figcaption></a>
+          </figure>
+          <span id="oi"><BR> No segundo projeto, tivemos a oportunidade de simular um sistema de folha de pagamento. Nesse sistema, os usuários inserem seus dados, como salário bruto, vale transporte e informações sobre dependentes, caso possuam. Com base nessas informações, o programa realiza cálculos para aplicar os descontos adequados no salário, levando em consideração o IRRF (Imposto de Renda Retido na Fonte) e o INSS (Instituto Nacional do Seguro Social).</span>
+      </span>
+      <span id="pojeto"> <span id="oi"><BR> No terceiro e último projeto dessa vertente, desenvolvemos um site que permitia aos usuários implementar seu próprio código em um CSS predefinido. O site fornecia uma estrutura pré-estabelecida, semelhante a uma "IDE" (Integrated Development Environment), onde os usuários podiam escrever seu código CSS e visualizar os resultados imediatamente.</span>
+        <figure id="fig">
+            <a href="../trabalhos/projeto-implement-html-js/html/pagina-inicial.html" target="_blank"><img id="img2" src="../image/Screenshot 2023-06-13 at 20-57-34 Document.png" alt=""></a> 
+            <a href="../trabalhos/projeto-implement-html-js/html/pagina-inicial.html"target="_blank"><figcaption>Clique aqui para ver o projeto</figcaption></a>
+          </figure>
+    </span>
+
+        
+      </div>
+      
+      
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script src="../js/java1.js"></script>
+</body>
+</html>

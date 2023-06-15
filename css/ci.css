@@ -1,0 +1,138 @@
+body {   
+    background-image: url('../image/Matrix-Code-Rain-Screensaver-Short-Version-4K.gif');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-size: 100%;
+  }
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      backdrop-filter: blur(1px);
+      border-radius: 10px;
+    }
+  
+    li { 
+      float: left;
+      margin-left: 57px;
+      margin-top: 10px;
+    }
+    
+    li a {
+  
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+  
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+      color: #ffffff;
+    }
+    
+    .hover-underline-animation::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color:#229711;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    
+    .hover-underline-animation:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  
+    .blur{
+      backdrop-filter: blur(3px);
+      color:#229711;
+      margin-top: 100px;
+      width: 1130px; 
+      height: 1600px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-size: larger;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+     
+    }
+  
+    .text1{
+      color: #ffffff;
+  
+    }
+  
+    .input{color:#229711;}
+  
+    .img{
+    
+     justify-content: space-around;
+      display: flex;
+      flex-direction: row;
+     
+    }
+    
+    #imgc{
+      height: 400px;
+      width: 800px;
+    }
+  
+    #text{
+      color: #ffffff;
+    }
+  
+    #pojeto{
+      color: #ffffff;
+      display: flex;
+      margin-top: 50px;
+      
+     
+      justify-content: center;
+    }
+   
+  #img2{
+    width: 500px;
+    height: 280px
+  }
+  #img3{
+    width: 400px;
+    height: 200px
+  }
+  .fig{
+    display: flex;
+  }
+  
+  #vid{
+    width: 500px;
+    height: 280px
+  }
+  
+  a {
+  color: #ffffff;
+  }
+  
+  a:visited {
+   color: #ffffff;
+  }
+  
+  a:hover {
+   color: #229711;
+  }
+  a:active {
+   color: #ffffff;
+  }

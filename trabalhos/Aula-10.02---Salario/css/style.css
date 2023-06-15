@@ -1,0 +1,226 @@
+body {
+    color: white;
+    background-color: black;
+    background-image: url(https://f8n-production.s3.amazonaws.com/creators/profile/79cheqhuq-3cab434622d9fabfde2f46e9a51380d6-gif-1ikpty.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    font-size: 20px;
+
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(8, 0, 70, 0.9),
+            rgba(8, 0, 70, 0.9),
+            rgba(0, 0, 0, 0.1));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(35, 0, 190, 0.0);
+}
+
+#blocoDeCal {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.ladoEsquerdo {
+    font-size: medium;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 375px;
+    margin-top: 120px;
+    margin-bottom: 205px;
+    border-radius: 2%;
+    background-image: linear-gradient(to right,
+            rgba(20, 0, 30, 0.8),
+            rgba(40, 0, 70, 0.8),
+            rgba(20, 0, 30, 0.8));
+    box-shadow: -10px -10px 20px rgb(48, 151, 250), 10px 10px 20px rgb(254, 48, 233);
+}
+
+.TextEsq {
+    padding: 10px;
+}
+
+#botao button{
+    font-size: medium;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right,
+            rgba(20, 0, 30, 0.8),
+            rgba(40, 0, 70, 0.8),
+            rgba(20, 0, 30, 0.1));
+    box-shadow: 5px 5px 20px rgb(3, 37, 131) inset, -5px -5px 20px rgb(255, 0, 230) inset;
+    text-align: center;
+    border-radius: 10%;
+    width: 180px;
+    height: 35px;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    color: white;
+}
+
+#botao button:hover{
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right,
+            rgba(20, 0, 30, 0.8),
+            rgba(40, 0, 70, 0.8),
+            rgba(20, 0, 30, 0.1));
+            box-shadow: -5px -5px 20px rgb(3, 37, 131) inset, 5px 5px 20px rgb(255, 0, 230) inset;
+    text-align: center;
+    border-radius: 15%;
+    width: 180px;
+    height: 35px;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+#botao button:active{
+    transition: 0.1s;
+    background-color: rgba(14, 58, 178, 0.9);
+}
+
+
+.chato{
+    margin-top: 0px;
+}
+
+#calc {
+    height: 50px;
+    border-style: hidden;
+
+}
+
+.Check {
+    display: flex;
+}
+
+.ladoDireito {
+    font-size: medium;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 375px;
+    margin-top: 120px;
+    margin-bottom: auto;
+    border-radius: 2%;
+    background-image: linear-gradient(to right,
+            rgba(20, 0, 30, 0.8),
+            rgba(40, 0, 70, 0.8),
+            rgba(20, 0, 30, 0.1));
+    box-shadow: 10px -10px 20px rgb(48, 151, 250), -10px 10px 20px rgb(254, 48, 233);
+}
+
+.Textdr {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-content: center;
+    margin-top: 0px;
+}
+
+.Textdr h2{
+   text-align:center;
+}
+
+.Botao2{
+    display: flex;
+    align-items: center;
+padding-top: 73px;
+}
+
+.Botao2 h2{
+    margin-top: 0%;
+    color: white;
+}
+
+.Botao2 button{
+    font-size: medium;
+    width: 180px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right,
+            rgba(20, 0, 30, 0.8),
+            rgba(40, 0, 70, 0.8),
+            rgba(20, 0, 30, 0.1));
+    box-shadow: -5px 5px 20px rgb(3, 37, 131) inset, 5px -5px 20px rgb(255, 0, 230) inset;
+    text-align: center;
+    border-radius: 10%;
+    width: 180px;
+    margin-top: -10%;
+}
+
+.Botao2 button:hover{
+    transition: 0.5s;
+    width: 180px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(to right,
+        rgba(20, 0, 30, 0.8),
+        rgba(40, 0, 70, 0.8),
+        rgba(20, 0, 30, 0.1));
+    box-shadow: 5px -5px 20px rgb(3, 37, 131) inset, -5px 5px 20px rgb(255, 0, 230) inset;
+    text-align: center;
+    border-radius: 15%;
+    width: 180px;
+}
+
+.Botao2 button:active{
+    transition: 0.1s;
+    background-color: rgba(243, 36, 222, 0.7);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(40, 0, 70, 0.8),
+            rgba(0, 0, 0, 0.1));
+    padding: 10px;
+    bottom: 0px;
+}
+
+
+.tabela{
+    display: flex;
+    align-items: center;
+}
+
+.tabela #sb{
+    height: ;
+}
+
+.fixo{
+    font-size: auto;
+}
+
+div.hide {
+    opacity: 0;
+    pointer-events: none; 
+  }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem de programação</title>
+    <link rel="stylesheet" href="../css/ba.css">
+    <link rel="icon" type="image/icon" href="/image/pc.png">
+</head>
+<body>
+    <ul>
+        <li><a class="hover-underline-animation" href="./index.html">Página inicial</a></li>
+        <li><a class="hover-underline-animation" href="./li.html">Linguagem de programação</a></li>
+        <li><a class="hover-underline-animation" href="./ba.html">Banco de dados</a></li>
+        <li><a class="hover-underline-animation" href="./ai.html">Automação industrial</a></li>
+        <li><a class="hover-underline-animation" href="./ci.html">Ciência de dados</a></li>
+        <li><a class="hover-underline-animation" href="./re.html">Redes de computadores</a></li>
+
+      </ul>
+      <title>Botão Voltar ao Topo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      height: 200px; /* Altura simulada para demonstração */
+    }
+
+    #voltarTopo {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #ffffff;
+      color: #229711;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50%;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #voltarTopo:hover {
+      background-color: #777;
+    }
+  </style>
+</head>
+<body>
+  <button id="voltarTopo" onclick="voltarAoTopo()">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script>
+    window.onscroll = function() {
+      mostrarBotao();
+    };
+
+    function mostrarBotao() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("voltarTopo").style.display = "block";
+      } else {
+        document.getElementById("voltarTopo").style.display = "none";
+      }
+    }
+
+    function voltarAoTopo() {
+      // Verifica a compatibilidade do navegador
+      if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0) {
+        // Usa o método 'scrollTo' para uma transição suave
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+    }
+  </script>
+      <div class="blur">
+        <h1> <span class="input"></span> </h1>
+        <div class="text1"> Continuamos com os estudos, adentrando no campo dos bancos de dados, compreendendo seu funcionamento, tipos, Modelos de Entidade Relacionamento (MER), Diagramas Entidade Relacionamento (DER), cardinalidade, e outros conceitos relacionados.
+          <br><br><br><br>Durante o curso, exploramos a importância do Banco de Dados como uma estrutura física para armazenar informações por um período de tempo indeterminado. Para gerenciar um banco de dados, utilizamos sistemas específicos. Existem diversos tipos de bancos de dados, sendo o banco de dados relacional um dos mais comuns. Nesse tipo de banco, as informações são organizadas em tabelas compostas por linhas e colunas. Cada tabela representa uma entidade, como clientes, produtos ou pedidos, e as relações entre essas entidades são estabelecidas por meio de chaves primárias e estrangeiras.
+          <br><br>
+          <br><br>
+        </div>
+          <div class="img">
+            
+          <img id="imgc"  src="../image/bdr.png" alt=""> <img id="imgc" src="../image/bdes.png" alt="">
+          
+        </div>
+        
+          <div class="text1">
+            <br><br>
+            <br><br> Antes de começarmos a programar em SQL, dedicamos um tempo ao estudo da modelagem de dados. Nesse contexto, aprendemos sobre o diagrama MER (Modelo de Entidade Relacionamento), que é uma representação conceitual que descreve os objetos, suas características e seus relacionamentos. Também exploramos o diagrama DER (Diagrama Entidade Relacionamento), que é uma representação gráfica que mostra as entidades, atributos e relacionamentos entre elas. Estudamos a simbologia presente no diagrama DER e suas características. Em relação às entidades, identificamos dois tipos: entidades fortes, que possuem uma chave primária e existem independentemente de outras entidades, e entidades fracas, que dependem de outras entidades para existir e não têm chave primária.
+            <br><br>
+            <br><br>
+        </div>
+          <div class="img">
+            
+            <img id="imgc"  src="../image/derex.png" alt=""> 
+            
+          </div>
+          <div class="text1">
+            <br><br>
+            <br><br>   No estudo da cardinalidade, que define como as entidades se relacionam, aprendemos sobre os três tipos: (1:1, 1:N, N:M). Também exploramos os relacionamentos fortes e fracos, que são determinados pela cardinalidade. Além disso, familiarizamo-nos com os Sistemas de Gerenciamento de Banco de Dados (SGBDs), que são softwares que permitem a criação, manipulação e administração de bancos de dados. Esses sistemas oferecem uma interface entre os usuários e o banco de dados, facilitando a criação, recuperação, atualização e exclusão de dados de forma eficiente e segura. Exemplos de SGBDs incluem Oracle, MySQL, SQL Server, PostgreSQL, entre outros.
+            <br><br>
+            <br><br>
+        </div>
+        <div class="img1">
+          <img id="imgc"  src="../image/img00_cardinalidade.jpg" alt=""> <img id="imgc" src="../image/exemplos-de-sgbds-PhotoRoom.png-PhotoRoom.png" alt="">
+          <br>
+          <br>
+        </div>  
+        
+        <br> <h1> 
+          <br>
+          <br>Projetos desenvolvidos:</h1>
+        <span id="text"> Tivemos a oportunidade de colocar em prática nossos conhecimentos ao desenvolver nosso próprio banco de dados, incluindo a criação de Modelos de Entidade Relacionamento (MER) e Diagramas Entidade Relacionamento (DER).
+        </span>
+        <span id="pojeto"> 
+          <span id="oi"><BR>No primeiro projeto, cada squad da sala foi designada para resolver um dos exercícios propostos pelo professor durante as aulas. Em meu grupo, composto por Giovanni Menon, Diego Henrique, Rafael Mattos e Vítor Maia, ficamos responsáveis pela resolução do exercício número 6.
+
+            Para desenvolver nosso projeto, começamos criando um Modelo de Entidade Relacionamento (MER) e um Diagrama Entidade Relacionamento (DER). Esses modelos foram fundamentais para servir de base na criação do nosso próprio banco de dados, fornecendo uma estrutura sólida e coerente para o projeto.</span>
+            <figure id="fig"><a href="../image/exdeawio.png" target="_blank"><img id="img2" src="../image/exdeawio.png"  alt=""></a>
+              <video id="vid" src="../image/PostgreSQL.mp4" controls  muted>
+                
+              </video>
+            </figure>
+            
+            No segundo projeto, a turma se uniu para normalizar um banco de dados contendo informações sobre o evento do Titanic. O objetivo era organizar e padronizar os dados de forma eficiente, seguindo as melhores práticas de modelagem de banco de dados.
+            <figure id="fig">
+              <video id="vid" src="../image/2023-06-15 14-20-58.mp4" controls  muted>
+                
+              </video>
+              <a href="https://www.notion.so/Normaliza-o-do-Banco-de-Dados-TITANIC-documenta-o-aee054d2ce884bf4973a7b4b267e52e3"target="_blank"><figcaption>Clique aqui para ver o projeto</figcaption></a>
+            </figure>
+      </span>
+ 
+       </div>
+
+      
+     
+      </div>
+      
+      
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script src="../js/java2.js"></script>
+</body>
+</html>

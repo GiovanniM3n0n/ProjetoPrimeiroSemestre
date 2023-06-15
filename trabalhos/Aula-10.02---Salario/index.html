@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Salario</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Cálculo de Folha de Pagamento</h1>
+    </header>
+
+    <body>
+        <main>
+            <section id="blocoDeCal">
+                <div class="ladoEsquerdo">
+                    <div class="TextEsq">
+                        <div class="Top">
+                            <div class="slb"> <h2> Salário Bruto:</h2></div>
+                                <form action="">
+                                    <label class="Sala" for="Salário"> </label>
+                                    <input type="text" id="sala" value=""/>
+                                </form>
+                            </div>
+                                <div class="Denp">
+                                <br>
+                                    <div class="dpt"> <h2> Dependentes:</h2></div>
+                                    <form action="">
+                                        <label class="Dep" for="Dependentes"> </label>
+                                        <input type="text"  id="dpnt">
+                                        </form>
+                                    </div><br>
+                                </div>
+                                <div id="valets"> 
+                                    <input type="checkbox" name="checkbox" id="vale">
+                                    <label for="checkbox">Vale Transporte</label>
+                                </div>
+                            <div id="botao"><button><H2 class="chato">Calcular</H2></button></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <div class="ladoDireito">
+                        <div class="Textdr">
+                        <H2>Resultado:</H2>
+                            <Div class="tabela">
+                                <table border="1">
+                                    <tr>
+                                        <th class="fixo">SaLário Bruto</th>
+                                        <td class="vari" id="sb">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="fixo">INSS</th>
+                                        <td class="vari" id="in"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="fixo">IRRF</th>
+                                        <td class="vari" id="ir"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="fixo">Vale Transporte</th>
+                                        <td class="vari" id="vt"></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="fixo">SaLário Líquido</th>
+                                        <td class="vari" id="sl"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="Botao2">    
+                            <button class="botao2" type="reset" id="resetar"> <H2>Resetar</H2> </button>
+                        </div>
+                    </div> 
+                
+
+            </section>
+        </main>
+    </body>
+    <footer>
+        copyright &copy; 2023
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

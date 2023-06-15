@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem de programação</title>
+    <link rel="stylesheet" href="../css/ci.css">
+    <link rel="icon" type="image/icon" href="/image/pc.png">
+</head>
+<body>
+    <ul>
+        <li><a class="hover-underline-animation" href="./index.html">Página inicial</a></li>
+        <li><a class="hover-underline-animation" href="./li.html">Linguagem de programação</a></li>
+        <li><a class="hover-underline-animation" href="./ba.html">Banco de dados</a></li>
+        <li><a class="hover-underline-animation" href="./ai.html">Automação industrial</a></li>
+        <li><a class="hover-underline-animation" href="./ci.html">Ciência de dados</a></li>
+        <li><a class="hover-underline-animation" href="./re.html">Redes de computadores</a></li>
+
+      </ul>
+      <title>Botão Voltar ao Topo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      height: 200px; /* Altura simulada para demonstração */
+    }
+
+    #voltarTopo {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #ffffff;
+      color: #229711;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50%;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #voltarTopo:hover {
+      background-color: #777;
+    }
+  </style>
+</head>
+<body>
+  <button id="voltarTopo" onclick="voltarAoTopo()">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script>
+    window.onscroll = function() {
+      mostrarBotao();
+    };
+
+    function mostrarBotao() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("voltarTopo").style.display = "block";
+      } else {
+        document.getElementById("voltarTopo").style.display = "none";
+      }
+    }
+
+    function voltarAoTopo() {
+      // Verifica a compatibilidade do navegador
+      if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0) {
+        // Usa o método 'scrollTo' para uma transição suave
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+    }
+  </script>
+      <div class="blur">
+        <h1> <span class="input"></span> </h1>
+        <div class="text1"> Na área da Ciência de Dados, começamos aprendendo sobre os fundamentos da estatística, como por exemplo: o que é população, o que é uma amostra, conjuntos finitos, e conjuntos infinitos.
+          <br><br><br><br>População é o conjunto de elementos que compartilham pelo menos uma característica em comum, enquanto amostra é um subconjunto desses elementos. As populações podem ser finitas, com um número limitado de elementos, ou infinitas, com um número ilimitado de elementos.
+          
+        </div>
+         
+        
+          <div class="text1">
+            
+            <br><br> Na área de amostragem, estudamos diferentes métodos para selecionar amostras. Na amostragem probabilística, temos a amostragem aleatória, estratificada, sistemática e em clusters. Já na amostragem não probabilística, encontramos técnicas como amostragem por conveniência, por cota, SnowBall, intencional e voluntária.
+          
+        </div>
+         
+          <div class="text1">
+            
+            <br><br>  Dentro das amostras, também exploramos os tipos de variáveis. As variáveis são características que podem ser observadas, medidas ou contadas nos elementos da população ou amostra e que podem variar. Existem variáveis qualitativas (que descrevem atributos ou categorias), variáveis quantitativas (que expressam quantidades numéricas) e variáveis qualitativas nominais (que representam categorias sem uma ordem específica).
+            
+        </div>
+        
+        <div class="text1">
+            
+            <br><br>  Exploramos também as escalas de medição, que são utilizadas em diversas áreas, como ciências sociais, ciências naturais, pesquisa de mercado, psicologia e estatística. As escalas incluem a escala nominal, a escala ordinal, a escala intervalar e a escala de razão, cada uma com suas características e propriedades distintas.
+            
+        </div>
+        
+        <div class="text1">
+            
+            <br><br>  Em relação à análise de dados, aprendemos sobre medidas de tendência central, como moda, mediana, média aritmética, percentil e quartil. Essas medidas resumem um conjunto de dados em um único valor representativo. Também estudamos medidas de dispersão, como amplitude, variância e desvio padrão, que indicam o grau de variação dos dados em um conjunto.
+            
+        </div>
+
+        <div class="text1">
+            
+            <br><br>  Além desses conceitos, discutimos os testes de hipóteses, que são utilizados para fazer generalizações sobre uma população com base em uma amostra. Testes como Qui-Quadrado, Kolmogorov-Smirnov, Shapiro-Wilk e Anderson-Darling permitem tomar decisões ou fazer afirmações sobre uma hipótese nula em relação a uma hipótese alternativa.
+            
+        </div>
+
+        
+        <div class="text1">
+            
+            <br><br>  A inferência estatística é o processo de obter conclusões ou fazer afirmações sobre uma população com base em informações limitadas disponíveis por amostras. Durante as aulas, exploramos a inferência com a distribuição probabilística binomial, que modela o número de sucessos em um número fixo de ensaios independentes, com dois resultados possíveis (sucesso e fracasso). Também estudamos a regressão logística, um método estatístico utilizado para modelar a relação entre uma variável dependente binária e uma ou mais variáveis independentes. Além disso, revisamos conceitos matemáticos, como funções de primeiro e segundo grau, e a partir disso, aprofundamos nossos estudos em limites, derivadas e integrais.
+            
+        </div>
+
+         <h1> 
+          
+            <br> Material usado em aula:</h1>
+        <span id="text"> Como esta é uma matéria mais teórica, não produzimos nenhum projeto, apenas alguns testes utilizando a plataforma Google Colab.
+        </span>
+        <span id="pojeto"> 
+          
+          <figure id="fig">
+            <video id="vid" src="../image/2023-06-15 15-24-09.mp4" controls  muted>
+              
+            </video>
+            <a href="https://colab.research.google.com/drive/1qVkkNEYmu1mKBCzy3dfxzmAkrdw305o9?usp=sharing#scrollTo=nNoqyELRuzOs"target="_blank"><figcaption>Clique aqui para ver o projeto</figcaption></a>
+          </figure>
+            
+      </span>
+ 
+       </div>
+
+      
+     
+      </div>
+      
+      
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script src="../js/java4.js"></script>
+</body>
+</html>
